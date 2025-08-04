@@ -20,12 +20,12 @@ Built as a proof-of-concept aligned with the automotive domain — easily adapta
 
 | Step                  | Function                                               |
 |-----------------------|--------------------------------------------------------|
-| ✅ Upload log file     | Plain text file with system logs                      |
-| ✅ ML Classification   | Assigns severity using trained PyTorch model          |
-| ✅ Optional GenAI      | Toggle `use_genai=true` to enable GenAI pipeline      |
-| ✅ Summarization       | LLM summarizes logs by severity                       |
-| ✅ Root Cause & Fixes  | LLM suggests possible causes and resolution steps     |
-| ✅ Stats               | Returns severity counts, percentages, and dominant type |
+| Upload log file     | Plain text file with system logs                      |
+| ML Classification   | Assigns severity using trained PyTorch model          |
+| Optional GenAI      | Toggle `use_genai=true` to enable GenAI pipeline      |
+| Summarization       | LLM summarizes logs by severity                       |
+| Root Cause & Fixes  | LLM suggests possible causes and resolution steps     |
+| Stats               | Returns severity counts, percentages, and dominant type |
 
 ---
 
@@ -43,7 +43,9 @@ docker build -t genai-log-analyzer .
 Either:
 #### Option A: Set model in the Dockerfile
 Edit this line in your Dockerfile:
-ENV LLM_MODEL="deepseek-r1-distill-qwen-7b"
+```bash
+ENV LLM_MODEL="phi-4"
+```
 #### Option B: Set model dynamically at runtime
 Use the -e flag:
 ```bash
