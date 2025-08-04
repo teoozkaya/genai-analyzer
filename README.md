@@ -29,11 +29,22 @@ A modern log analysis tool that combines classic machine learning with GenAI cap
 
 ## 🚀 How to Run (Local or Docker)
 
-### 1. Build the Docker image
+### 1. Clone the repository: 
+Copy this into the terminal
+```bash
+git clone https://github.com/mazumdarsoubhik/GenAI_LogAnalyzer.git
+```
+### 2. Change folder: 
+Go to the directory: 
+```bash
+cd genai-anaylzer
+```
+### 3. Build the Docker image
+Make sure you have Docker installed and running on your system. Then run:
 ```bash
 docker build -t genai-log-analyzer .
 ```
-### 2. Start the App with LM Studio
+### 4. Start the App with LM Studio
 - First, make sure LM Studio is running with a compatible model:
 - Launch LM Studio
 - Load a model (e.g., phi-2, mistral, or deepseek-r1-distill-qwen-7b)
@@ -49,11 +60,12 @@ Use the -e flag:
 ```bash
 docker run -p 8000:8000 -e LLM_MODEL="YOUR-MODEL" genai-log-analyzer
 ```
-### 3. Test It
+### 5. Test It
+There is a ready sample log file to analyze
 #### In a second terminal window:
 ```bash
 curl -X POST "http://localhost:8000/analyze?use_genai=true" \
-     -F "file=@app/sample_logs/sample1-log.txt"
+     -F "file=@genai-analyzer/app/sample_logs/sample1-log.txt"
 ```
 
 Depending on the model you are using this process can take between 1-10 minutes
