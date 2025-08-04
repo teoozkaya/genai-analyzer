@@ -34,7 +34,7 @@ Built as a proof-of-concept aligned with the automotive domain — easily adapta
 ### 1. Build the Docker image
 ```bash
 docker build -t genai-log-analyzer .
-
+```
 ### 2. Start the App with LM Studio
 - First, make sure LM Studio is running with a compatible model:
 - Launch LM Studio
@@ -46,15 +46,18 @@ Edit this line in your Dockerfile:
 ENV LLM_MODEL="deepseek-r1-distill-qwen-7b"
 #### Option B: Set model dynamically at runtime
 Use the -e flag:
+```bash
 docker run -p 8000:8000 -e LLM_MODEL="mistral" genai-log-analyzer
-
+```
 ### 3. Test It
-####In a second terminal window:
+#### In a second terminal window:
+```bash
 curl -X POST "http://localhost:8000/analyze?use_genai=true" \
      -F "file=@app/sample_logs/sample1-log.txt"
+```
 
 Depending on the model you are using this process can take between 1-10 minutes
-####You can also try:
+#### You can also try:
 open this in your browser to use the Swagger UI:
 http://localhost:8000/docs
 to view the Swagger UI.
