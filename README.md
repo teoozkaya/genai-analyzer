@@ -2,8 +2,6 @@
 
 A modern log analysis tool that combines classic machine learning with GenAI capabilities to summarize, explain, and suggest fixes for system logs.
 
-Built as a proof-of-concept aligned with the automotive domain — easily adaptable for diagnostics, DevOps, or internal IT tools.
-
 ---
 
 ## ⚙️ Tech Stack
