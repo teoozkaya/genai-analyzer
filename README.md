@@ -45,10 +45,10 @@ Make sure you have Docker installed and running on your system. Then run:
 docker build -t genai-log-analyzer .
 ```
 ### 4. Start the App with LM Studio
-- First, make sure LM Studio is running with a compatible model:
-- Launch LM Studio
-- Load a model (e.g., phi-2, mistral, or deepseek-r1-distill-qwen-7b)
-- Ensure the OpenAI-compatible API server is running in LM Studio (default port: 1234)
+- First, make sure LM Studio is running with a compatible model:  
+- Launch LM Studio  
+- Load a model (e.g., phi-2, mistral, or deepseek-r1-distill-qwen-7b)  
+- Ensure the OpenAI-compatible API server is running in LM Studio (default port: 1234)  
 Either:
 #### Option A: Set model in the Dockerfile
 Edit this line in your Dockerfile:
@@ -70,11 +70,12 @@ curl -X POST "http://localhost:8000/analyze?use_genai=true" \
 
 Depending on the model you are using this process can take between 1-10 minutes
 #### You can also try:
-open this in your browser to use the Swagger UI:
-http://localhost:8000/docs
-to view the Swagger UI.
+open this in your browser to use the Swagger UI:  
+http://localhost:8000/docs  
+to view the Swagger UI.  
 
 ## 🧾 Sample Response (GenAI enabled)
+```bash
 {
   "status": "success",
   "result": {
@@ -91,14 +92,14 @@ to view the Swagger UI.
     }
   }
 }
-
+```
 ## ✍️ Author Notes
-This project was built as a GenAI job application proof-of-concept.
-Strong focus on explainability and control.
-Easily extensible for alerts, metrics, or a frontend dashboard.
-Offline LLM support via LM Studio, or OpenAI API-ready.
+This project was built as a GenAI job application proof-of-concept.  
+Strong focus on explainability and control.  
+Easily extensible for alerts, metrics, or a frontend dashboard.  
+Offline LLM support via LM Studio, or OpenAI API-ready.  
 
 ## 📦 API Summary
 Endpoint	Method	Description
-/analyze	POST	Upload a log file for analysis
-/docs	GET	View interactive API docs (Swagger UI)
+/analyze	POST	Upload a log file for analysis  
+/docs	GET	View interactive API docs (Swagger UI)  
