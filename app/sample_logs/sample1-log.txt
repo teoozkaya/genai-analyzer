@@ -1,0 +1,4 @@
+INFO 2024-07-31 14:23:00 Connected to database
+WARNING 2024-07-31 14:23:02 Retry attempt #2 failed
+ERROR 2024-07-31 14:23:05 Failed to connect to API: TimeoutError
+INFO 2024-07-31 14:23:07 Job completed

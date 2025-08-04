@@ -1,0 +1,5 @@
+__pycache__/
+genAI_venv/
+*.pyc
+*.pth
+*.log

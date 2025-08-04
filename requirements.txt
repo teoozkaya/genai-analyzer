@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+torch
+openai
+langchain
+langgraph
+pydantic
+python-multipart
+aiofiles
+numpy
+langchain_openai 
+dotenv
+langchain-community
+scikit-learn
+joblib
