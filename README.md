@@ -82,9 +82,9 @@ to view the Swagger UI.
 
 ## ✍️ Author Notes
 This project was built as a GenAI job application proof-of-concept.
-Strong focus on explainability and control
-Easily extensible for alerts, metrics, or a frontend dashboard
-Offline LLM support via LM Studio, or OpenAI API-ready
+Strong focus on explainability and control.
+Easily extensible for alerts, metrics, or a frontend dashboard.
+Offline LLM support via LM Studio, or OpenAI API-ready.
 
 ## 📦 API Summary
 Endpoint	Method	Description
