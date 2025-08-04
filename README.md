@@ -49,7 +49,7 @@ ENV LLM_MODEL="phi-4"
 #### Option B: Set model dynamically at runtime
 Use the -e flag:
 ```bash
-docker run -p 8000:8000 -e LLM_MODEL="mistral" genai-log-analyzer
+docker run -p 8000:8000 -e LLM_MODEL="YOUR-MODEL" genai-log-analyzer
 ```
 ### 3. Test It
 #### In a second terminal window:
