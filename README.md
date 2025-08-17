@@ -32,7 +32,7 @@ A modern log analysis tool that combines classic machine learning with GenAI cap
 ### 1. Clone the repository: 
 Copy this into the terminal
 ```bash
-git clone https://github.com/mazumdarsoubhik/GenAI_LogAnalyzer.git
+git clone https://github.com/teoozkaya/genai-analyzer.git
 ```
 ### 2. Change folder: 
 Go to the directory: 
